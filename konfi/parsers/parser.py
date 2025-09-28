@@ -42,7 +42,7 @@ class Parser(metaclass=ParserMeta):
     _reg_parsers_cls: dict[str, type[Parser]] = {}
     _parsers: dict[str, Parser] = {} # 单例
     
-    matcher: set[str] = set() # 列出的sheet将使用该解析器
+    matcher: set[str] = set() # 列出的 sheet 将使用该解析器
     
     
     def _clean_row_data(self, row: tuple) -> tuple:

@@ -52,12 +52,10 @@ class Exportor:
         parsers = Parser.get_reg_parsers()
         for name, parser in parsers.items():
             cls = type(parser)
-            matcher_ = cls.__dict__.get("matcher", None)
-            if matcher_:
+            if "matcher" in cls.__dict__:
                 self._matchers.append(parser)
 
-            filter_ = cls.__dict__.get("filter", None)
-            if filter_:
+            if "filter" in cls.__dict__:
                 self._filters.append(parser)
 
 
