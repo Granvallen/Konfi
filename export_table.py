@@ -4,7 +4,7 @@ from konfi import Exportor
 def main():
     table_dir = "./design"
     data_dir = "./data"
-    writer_ext = "yaml"
+    writer_ext = "py"
     enum_tables = { "枚举" }
     
     exportor = Exportor(

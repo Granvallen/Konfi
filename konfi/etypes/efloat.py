@@ -3,7 +3,7 @@ from typing import Any
 from .etype import EType
 
 class EFloat(EType):
-    """ 整数
+    """ 浮点数
     """
     etype_tag = "float"
     default = 0.0
